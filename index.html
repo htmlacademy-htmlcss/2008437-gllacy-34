@@ -10,7 +10,7 @@
   <body>
     <header class="page-header">
       <a href="#" class="header-logo">
-        <img class="header-logo-img" src="./images/index/logo.svg" alt="Логотип магазина «Глэйси»">
+        <img class="header-logo-img" src="./images/header/logo.svg" alt="Логотип магазина «Глэйси»">
       </a>
       <nav class="header-navigation">
           <ul class="header-navigation-list">
@@ -78,7 +78,7 @@
             <ul class="cart-popup-list">
               <li class="cart-popup-item">
                 <a href="/strawberry-icecream.html" class="cart-popup-link">
-                  <img class="cart-popup-product-img" src="./images/index/strawberry-icecream.png" width="46" height="46" alt="Мороженое с малиной.">
+                  <img class="cart-popup-product-img" src="./images/catalog/product-1.png" width="46" height="46" alt="Мороженое с малиной.">
                   <h4 class="cart-popup-product-title">Малинка</h4>
                   <span class="cart-popup-product-description">1 кг х 310 ₽</span>
                 </a>
@@ -89,7 +89,7 @@
               </li>
               <li class="cart-popup-item">
                 <a href="/bubblegum-icecream.html" class="cart-popup-link">
-                  <img class="cart-popup-product-img" src="./images/index/bubblegum-icecream.png" width="46" height="46" alt="Мороженое с малиной.">
+                  <img class="cart-popup-product-img" src="./images/catalog/product-4.png" width="46" height="46" alt="Мороженое Бабл-Гам.">
                   <h4 class="cart-popup-product-title">Бабл-Гам</h4>
                   <span class="cart-popup-product-description">1,5 кг х 320 ₽</span>
                 </a>
@@ -126,8 +126,8 @@
         </div>
         <!-- Отсутствует JavaScript. При нажатии на одну из кнопок меняется класс .active-slide,
            а также удаляется у кнопки класс .dot-button-active и переносится на кнопку на которую был произведен клик -->
-        <div class="pagination-slider">
-          <button class="dot-button dot-button-active" type="button">
+        <div class="slider-pagination">
+          <button class="dot-button dot-button-is-active" type="button">
             <span class="visually-hidden">Первый промо-товар</span>
           </button>
           <button class="dot-button" type="button">
@@ -154,26 +154,59 @@
             </a>
           </li>
         </ul>
-        <div class="slider">
-          <div class="slide slide-is-active">
-            <div class="slide-description">
-              <h3 class="slide-title">Нежный пломбир с клубничным джемом</h3>
-              <p class="slide-text">
-                Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
-              </p>
-              <button class="slide-button" type="button">Заказать</button>
-            </div>
-            <div class="slide-image">
-              <img class="slide-image" src="./images/." width="348" height="554" alt="Рожок клубничного мороженого.">
-            </div>
-            <div class="slide-image-mini">
-              <img class="slide-image-mini" src="./images/" width="66" height="150" alt="Рожок бананового мороженого.">
-            </div>
-            <div class="slide-image-mini">
-              <img class="slide-image-mini" src="./images/" width="66" height="150" alt="Рожок мороженого с присыпкой.">
-            </div>
+        <div class="slide slide-is-active">
+          <div class="slide-description">
+            <h3 class="slide-title">Нежный пломбир с клубничным джемом</h3>
+            <p class="slide-text">
+              Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+            </p>
+            <button class="slide-button" type="button">Заказать</button>
           </div>
-          <div class="pagination"></div>
+          <div class="slide-image">
+            <img class="slide-image" src="./images/index/promo-product-1.png" width="348" height="554" alt="Рожок клубничного мороженого.">
+          </div>
+          <div class="slide-image-mini">
+            <img class="slide-image-mini" src="./images/index/promo-product-2.png" width="66" height="150" alt="Рожок бананового мороженого.">
+          </div>
+          <div class="slide-image-mini">
+            <img class="slide-image-mini" src="./images/index/promo-product-3.png" width="66" height="150" alt="Рожок мороженого с присыпкой.">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-description">
+            <h3 class="slide-title">Сливочное мороженое со вкусом банана</h3>
+            <p class="slide-text">
+              Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.
+            </p>
+            <button class="slide-button" type="button">Заказать</button>
+          </div>
+          <div class="slide-image">
+            <img class="slide-image" src="./images/index/promo-product-2.png" width="348" height="554" alt="Рожок бананового мороженого.">
+          </div>
+          <div class="slide-image-mini">
+            <img class="slide-image-mini" src="./images/index/promo-product-3.png" width="66" height="150" alt="Рожок мороженого с присыпкой.">
+          </div>
+          <div class="slide-image-mini">
+            <img class="slide-image-mini" src="./images/index/promo-product-1.png" width="66" height="150" alt="Рожок клубничного мороженого.">
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-description">
+            <h3 class="slide-title">Сливочное мороженое со вкусом банана</h3>
+            <p class="slide-text">
+              Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.
+            </p>
+            <button class="slide-button" type="button">Заказать</button>
+          </div>
+          <div class="slide-image">
+            <img class="slide-image-mini" src="./images/index/promo-product-3.png" width="348" height="554" alt="Рожок мороженого с присыпкой.">
+          </div>
+          <div class="slide-image-mini">
+            <img class="slide-image-mini" src="./images/index/promo-product-1.png" width="66" height="150" alt="Рожок клубничного мороженого.">
+          </div>
+          <div class="slide-image-mini">
+            <img class="slide-image" src="./images/index/promo-product-2.png" width="66" height="150" alt="Рожок бананового мороженого.">
+          </div>
         </div>
       </section>
       <section class="gifts">
@@ -211,7 +244,7 @@
         </h2>
         <ul class="popular-products-list">
           <li class="popular-products-item">
-            <img class="popular-products-img" src="./images/product-1.png" alt="Малиновый шарик мороженого.">
+            <img class="popular-products-img" src="./images/catalog/product-1.png" alt="Малиновый шарик мороженого.">
             <h3 class="popular-products-title">
               Малинка
             </h3>
@@ -226,7 +259,7 @@
             </p>
           </li>
           <li class="popular-products-item">
-            <img class="popular-products-img" src="./images/product-2.png" alt="Фисташковый шарик мороженого.">
+            <img class="popular-products-img" src="./images/catalog/product-2.png" alt="Фисташковый шарик мороженого.">
             <h3 class="popular-products-title">
               Фисташка
             </h3>
@@ -241,7 +274,7 @@
             </p>
           </li>
           <li class="popular-products-item">
-            <img class="popular-products-img" src="./images/product-3.png" alt="Черничный шарик мороженого.">
+            <img class="popular-products-img" src="./images/catalog/product-3.png" alt="Черничный шарик мороженого.">
             <h3 class="popular-products-title">
               Черника
             </h3>
@@ -256,7 +289,7 @@
             </p>
           </li>
           <li class="popular-products-item">
-            <img class="popular-products-img" src="./images/product-4.png" alt="Шарик мороженого Бабл-гам.">
+            <img class="popular-products-img" src="./images/catalog/product-4.png" alt="Шарик мороженого Бабл-гам.">
             <h3 class="popular-products-title">
               Бабл-гам
             </h3>
