@@ -952,6 +952,15 @@ margin: 0;
   color: var(--basic-extra-light)
 } FIXME */
 
+/* ANCHOR MAIN LAYOUT */
+
+.main-index {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(7, auto);
+  row-gap: 80px;
+}
+
 /* ANCHOR INDEX */
 
 /* SLIDES */
@@ -1144,5 +1153,110 @@ margin: 0;
   opacity: 0.4;
   cursor: no-drop;
 }
+
+/* Section Gifts */
+
+.gifts-title {
+  width: 434px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.gifts-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  list-style-type: none;
+}
+
+.gifts-item {
+  width: 570px;
+  padding: 36px;
+  background-color:var(--special-neutral);
+  border-radius: 16px;
+  background-image: url("../images/index/gift-2.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.gifts-item:first-child {
+  margin-right: 30px;
+  background-image: url("../images/index/gift-1.png");
+}
+
+.gifts-description {
+  max-width: 328px;
+}
+
+.gifts-item-title {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.gifts-text {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+
+/* Section Popular products */
+
+.popular-products-title {
+  width: 527px;
+  margin: 0 auto;
+  margin-bottom: 107px;
+  text-align: center;
+}
+
+.popular-products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.popular-products-item {
+  position: relative;
+  min-height: 281px;
+  padding: 133px 40px 24px 40px;
+  background-color: var(--basic-extra-light);
+  border-radius: 16px;
+}
+
+.popular-products-img {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popular-products-item-title {
+  margin: 0 auto;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.popular-products-text {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.popular-products-price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-popular-products {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
 
 /* ANCHOR CATALOG */
