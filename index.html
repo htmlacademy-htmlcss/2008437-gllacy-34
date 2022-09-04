@@ -7,6 +7,7 @@
     <link rel="ico" type="image/png" href="./images/favicon.png">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
+
   <body>
     <header class="page-header container">
       <a href="#" class="header-logo">
@@ -115,38 +116,39 @@
         </div>
       </div>
     </header>
+
     <main class="main-index container">
-      <h1>Интернет-магазин мороженого «Глэйси»</h1>
+      <h1 class="visually-hidden">Интернет-магазин мороженого «Глэйси»</h1>
       <section class="promo-slider">
         <h2 class="visually-hidden">Промо-товары</h2>
         <div class="slide slide-is-active">
           <div class="slide-content">
-            <h3 class="slide-title">Нежный пломбир с клубничным джемом</h3>
+            <h3 class="slide-title title">Нежный пломбир с клубничным джемом</h3>
             <p class="slide-text">
-              Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+              Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным джемом <br> – это идеальный десерт для всей семьи.
             </p>
             <a href="#" class="button">Заказать</a>
           </div>
-          <div class="slide-image">
-            <img class="slide-image" src="./images/index/promo-product-1.png" width="348" height="554" alt="Рожок клубничного мороженого.">
+          <div class="slide-image-wrapper">
+            <img class="slide-image" src="./images/index/promo-product-1.png" width="306" height="507" alt="Рожок клубничного мороженого.">
           </div>
-          <div class="slide-image-mini">
+          <div class="slide-image-mini-wrapper">
             <img class="slide-image-mini" src="./images/index/promo-product-2.png" width="66" height="150" alt="Рожок бананового мороженого.">
           </div>
-          <div class="slide-image-mini">
+          <div class="slide-image-mini-wrapper">
             <img class="slide-image-mini" src="./images/index/promo-product-3.png" width="66" height="150" alt="Рожок мороженого с присыпкой.">
           </div>
         </div>
         <div class="slide">
           <div class="slide-content">
-            <h3 class="slide-title">Сливочное мороженое со вкусом банана</h3>
+            <h3 class="slide-title title">Сливочное мороженое со вкусом банана</h3>
             <p class="slide-text">
               Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.
             </p>
             <a href="#" class="button">Заказать</a>
           </div>
           <div class="slide-image">
-            <img class="slide-image" src="./images/index/promo-product-2.png" width="348" height="554" alt="Рожок бананового мороженого.">
+            <img class="slide-image" src="./images/index/promo-product-2.png" width="306" height="507" alt="Рожок бананового мороженого.">
           </div>
           <div class="slide-image-mini">
             <img class="slide-image-mini" src="./images/index/promo-product-3.png" width="66" height="150" alt="Рожок мороженого с присыпкой.">
@@ -157,14 +159,14 @@
         </div>
         <div class="slide">
           <div class="slide-content">
-            <h3 class="slide-title">Сливочное мороженое со вкусом банана</h3>
+            <h3 class="slide-title title">Сливочное мороженое со вкусом банана</h3>
             <p class="slide-text">
               Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.
             </p>
             <a href="#" class="button">Заказать</a>
           </div>
           <div class="slide-image">
-            <img class="slide-image-mini" src="./images/index/promo-product-3.png" width="348" height="554" alt="Рожок мороженого с присыпкой.">
+            <img class="slide-image-mini" src="./images/index/promo-product-3.png" width="306" height="507" alt="Рожок мороженого с присыпкой.">
           </div>
           <div class="slide-image-mini">
             <img class="slide-image-mini" src="./images/index/promo-product-1.png" width="66" height="150" alt="Рожок клубничного мороженого.">
@@ -174,11 +176,17 @@
           </div>
         </div>
         <div class="controls">
-          <button class="previous-button" type="button">
+          <button class="previous-button" type="button" disabled>
             <span class="visually-hidden">Предыдущий промо-товар</span>
+            <svg class="slider-button-arrow" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Выбор предыдущего промо товара">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8033 1.80515C6.063 1.54545 6.063 1.12439 5.8033 0.864696C5.54361 0.604997 5.12255 0.604997 4.86285 0.864696L0.194774 5.53277C-0.0640686 5.79162 -0.0649218 6.21075 0.192214 6.47065C0.193377 6.47183 0.194544 6.47301 0.195717 6.47418L4.8638 11.1423C5.12349 11.402 5.54455 11.402 5.80425 11.1423C6.06395 10.8826 6.06395 10.4615 5.80425 10.2018L1.60545 6.00301L5.8033 1.80515Z" fill="#fcfcfc"/>
+              </svg>
           </button>
           <button class="next-button" type="button">
             <span class="visually-hidden">Следующий промо-товар</span>
+            <svg class="slider-button-arrow" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Выбор предыдущего промо товара">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8033 1.80515C6.063 1.54545 6.063 1.12439 5.8033 0.864696C5.54361 0.604997 5.12255 0.604997 4.86285 0.864696L0.194774 5.53277C-0.0640686 5.79162 -0.0649218 6.21075 0.192214 6.47065C0.193377 6.47183 0.194544 6.47301 0.195717 6.47418L4.8638 11.1423C5.12349 11.402 5.54455 11.402 5.80425 11.1423C6.06395 10.8826 6.06395 10.4615 5.80425 10.2018L1.60545 6.00301L5.8033 1.80515Z" fill="#fcfcfc"/>
+              </svg>
           </button>
         </div>
         <!-- Отсутствует JavaScript. При нажатии на одну из кнопок меняется класс .active-slide,
@@ -212,6 +220,7 @@
           </li>
         </ul>
       </section>
+
       <section class="gifts">
         <h2 class=gifts-title>
           Заказывайте мороженое и получайте подарки!
@@ -241,6 +250,7 @@
           </li>
         </ul>
       </section>
+
       <section class="popular-products">
         <h2 class=popular-products-title>
           Попробуйте самые популярные вкусы нашего мороженого
@@ -308,6 +318,7 @@
           </li>
         </ul>
       </section>
+
       <section class="company-features">
         <div class="company-features-wrapper">
           <div class="company-features-description">
@@ -344,12 +355,14 @@
          </div>
         </div>
       </section>
+
       <section class="blog-news">
         <span class="blog-news-label">Новое в нашем блоге</span>
         <h2 class="blog-news-title">
           10 способов сервировки фруктовых щербетов к столу
         </h2>
       </section>
+
       <section class="subscription">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="subscription-text">
@@ -363,6 +376,7 @@
           </form>
         </div>
       </section>
+
       <section class="delivery">
         <div class="delivery-description">
           <h2 class="delivery-description-title">
@@ -402,6 +416,7 @@
           </form>
         </div>
       </section>
+
       <section class="contacts">
         <h2 class="visually-hidden">Адрес и телефон</h2>
           <div class="contacts-wrapper">
@@ -424,6 +439,7 @@
           </div>
       </section>
     </main>
+
     <footer class="page-footer container">
       <div class="page-footer-wrapper">
         <ul class="footer-social-list">
