@@ -1,0 +1,954 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* VARIABLES */
+
+/* Basic colors */
+
+:root {
+  --basic-extra-dark: #2d3440;
+}
+
+:root {
+  --basic-dark: #565c66;
+}
+
+:root {
+  --basic-neutral: #b9b9b9;
+}
+
+:root {
+  --basic-light: #e7e7e7;
+}
+
+:root {
+  --basic-extra-light: #fcfcfc;
+}
+
+:root {
+  --basic-white: #ffffff;
+}
+
+/* Special colors */
+
+:root {
+  --special-extra-bright: #ff2f64;
+}
+
+:root {
+  --special-bright: #ff4a78;
+}
+
+:root {
+  --special-neutral: #ff7799;
+}
+
+:root {
+  --special-light: #feafc3;
+}
+
+:root {
+  --special-extra-light: #ffcbd8;
+}
+
+:root {
+  --special-blue: #69a9ff;
+}
+
+:root {
+  --special-yellow: #fcc850;
+}
+
+/* Status colors */
+
+:root {
+  --status-error: #ea5454;
+}
+
+:root {
+  --status-warning: #fd912e;
+}
+
+:root {
+  --status-success: #00e484;
+}
+
+/* Shadows */
+
+:root {
+  --shadow-small: 0 4px 12px rgba(45, 52, 64, 0.1);
+}
+
+:root {
+  --shadow-medium: 0 8px 16px rgba(45, 52, 64, 0.12);
+}
+
+:root {
+  --shadow-large: 0 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+/* ELEMENTS */
+
+/* Buttons */
+
+/* Primary buttons */
+
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 12px 32px;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  border: none;
+  border-radius: 26px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-extra-dark);
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--basic-extra-light);
+  box-shadow: var(--shadow-small);
+  cursor: pointer;
+}
+
+.button:hover {
+  outline: 4px solid var(--basic-extra-light);
+  background: rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
+}
+
+.button:active {
+  outline: 2px solid var(--basic-extra-dark);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--basic-extra-dark);
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.button:disabled {
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  background-color: var(--basic-light);
+  color: var(--basic-neutral);
+}
+
+.button-loading {
+  padding-right: 56px;
+}
+
+.button-loading:before {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: url("../images/icons/icon-button-spinner.svg") no-repeat;
+  background-position: center center;
+  /*// FIXME Check this part bro
+  Подумать над реализацией спиннера
+  border: 2px solid var(--basic-extra-dark);
+  opacity: 0.24;
+  */
+  content: "";
+}
+
+/* Secondary buttons */
+
+.button-secondary {
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  color: var(--basic-extra-light);
+  background-color: var(--special-extra-bright);
+}
+
+.button-secondary:hover {
+  outline: 4px solid var(--special-extra-bright);
+  color: var(--basic-extra-dark);
+  background-color: rgba(252, 252, 252, 0.3);
+  box-shadow: none;
+}
+
+.button-secondary:active {
+  outline: 2px solid var(--basic-extra-dark);
+  background-color: var(--special-light);
+}
+
+.button-secondary:focus-within {
+  outline: 2px solid var(--basic-extra-dark);
+}
+
+.button-secondary:disabled {
+  color: var(--basic-dark);
+  outline: 4px solid rgba(185, 185, 185, 0.3);
+  background-color: var(--basic-neutral);
+}
+
+/* FIXME
+.button-secondary-loading {
+  padding-right: 56px;
+}
+
+.button-loading:before {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: url("../images/icons/icon-button-spinner.svg") no-repeat;
+  background-position: center center;
+  /*
+  Подумать над реализацией спиннера
+  border: 2px solid var(--basic-extra-dark);
+  opacity: 0.24;
+
+  content: "";
+}
+*/
+
+/* Titles */
+
+.title,
+.subtitle,
+.title-3,
+.title-4,
+.title-5,
+.title-6 {
+  margin: 0;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.subtitle {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.title-3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.title-4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.title-5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.title-6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* Paragraphs */
+
+.paragraph-2,
+.paragraph-3,
+.paragraph-bold {
+  margin: 0;
+}
+
+.paragraph-2 {
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.paragraph-3,
+.paragraph-bold {
+font-size: 16px;
+line-height: 20px;
+}
+
+.paragraph-bold {
+  font-weight: 700;
+}
+
+/* Labels */
+
+.label-1,
+.label-bold {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.label-bold {
+  font-weight: 700;
+}
+
+.label-2 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Shadow */
+
+.shadow-small {
+  box-shadow: var(--shadow-small);
+}
+
+.shadow-medium {
+  box-shadow: var(--shadow-medium);
+}
+
+.shadow-large {
+  box-shadow: var(--shadow-large);
+}
+
+/* Containers */
+
+.container {
+  width: 1250px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+/* BASIC STYLES */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  min-width: 1366px;
+  height: 100%;
+  /* Basic font - paragraph-1 */
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-extra-dark);
+  background-color: var(--special-light);
+}
+
+.main-index,
+.main-catalog {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* ANCHOR HEADER*/
+
+/* Layout */
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 104px;
+}
+
+/* Logo */
+
+.header-logo {
+  margin-right: 16px;
+}
+
+/* Navigation */
+
+.header-navigation {
+  margin-right: auto;
+}
+
+.header-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 410px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: -10px;
+}
+
+.header-navigation-item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.header-navigation-link {
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 400;
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.header-navigation-link:hover {
+  outline: none;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.header-navigation-link:active {
+  outline: none;
+  background-color: var(--basic-white);
+}
+
+.header-navigation-link:focus-within {
+  background-color: var(--special-extra-bright);
+  color: var(--basic-extra-light)
+}
+
+/* Alternate class for JS */
+.header-navigation-link-is-active {
+  background-color: var(--special-extra-bright);
+  color: var(--basic-extra-light)
+}
+
+/* Navigation – Popup window */
+
+.header-button-wrapper:focus-within .header-popup,
+.header-navigation-link:focus-within + .header-popup {
+  display: block;
+}
+
+.header-button-wrapper:focus-within .cart-popup-empty {
+  display: none;
+ }
+
+.header-popup {
+  display: none;
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  transform: translateY(100%);
+  border-radius: 4px;
+  background-color: var(--basic-extra-light);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Navigation – Catalog Submenu */
+
+.submenu-list {
+  left: 0;
+  min-width: 135px;
+  margin: 0;
+  padding: 8px 0;
+  list-style-type: none;
+}
+
+.submenu-item:first-child {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.submenu-item:first-child > .submenu-link {
+padding: 8px 0 8px 16px;
+}
+
+.submenu-item:first-child::after {
+  position: absolute;
+  bottom: -4px;
+  left: 16px;
+  width: 103px;
+  height: 1px;
+  background-color: var(--basic-neutral);
+  content: "";
+}
+
+.submenu-link {
+  display: block;
+  padding: 6px 0 6px 16px;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+.submenu-link:hover {
+  background-color: var(--special-extra-light);
+}
+
+.submenu-link:active {
+  background-color: var(--special-neutral);
+}
+
+.submenu-link:focus-visible {
+  color: var(--basic-extra-light);
+  background-color: var(--special-bright);
+}
+
+/* User Menu */
+
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 480px;
+  margin-bottom: -10px;
+}
+
+.user-menu > .header-phone,
+.user-menu > .header-button-wrapper {
+  margin-bottom: 10px;
+}
+
+.user-menu > .header-phone,
+.user-menu > .header-button-wrapper {
+  margin-right: 16px;
+}
+
+/* User menu – Phone */
+
+.header-phone {
+  text-decoration: none;
+  color: inherit;
+  padding: 6px 0;
+}
+
+.header-button-wrapper {
+  position: relative;
+  display: flex;
+}
+
+/* User menu – Buttons */
+
+.header-button-wrapper > .button {
+  padding: 6px 16px 6px 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: none;
+}
+
+.header-button-wrapper > .button:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.header-button-wrapper > .button:active {
+  background-color: var(--basic-extra-light);
+}
+
+.header-button-wrapper > .button:focus-visible {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #000000;
+}
+
+.header-button-wrapper:focus-within > .button {
+  background-color: var(--special-extra-bright);
+  color: var(--basic-extra-light)
+}
+
+.header-button-wrapper:focus-within > .button-search::after {
+  background-image: url("../images/header/icons/icon-search-white.svg");
+}
+
+.header-button-wrapper:focus-within > .button-login::before {
+  background-image: url("../images/header/icons/icon-login-white.svg");
+}
+
+.header-button-wrapper:focus-within > .button-cart::before {
+  background-image: url("../images/header/icons/icon-cart-white.svg");
+}
+
+/* User Menu – Search button */
+
+.user-menu .button-search {
+  width: 32px;
+  height: 32px;
+  padding: 8px 0;
+}
+
+.button-search::after {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  background: url("../images/header/icons/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+/* User Menu – Login & Cart buttons */
+
+.button-login:before, .button-cart::before {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+/* User Menu – Login button */
+
+.button-login:before {
+background-image: url("../images/header/icons/icon-login.svg");
+}
+
+/* User Menu – Cart button */
+
+.button-cart:before {
+  background-image: url("../images/header/icons/icon-cart.svg");
+}
+
+/* User Menu – Search submenu */
+
+.site-search-popup {
+  padding: 24px 16px;
+}
+
+.site-search-field {
+  width: 324px;
+  min-height: 48px;
+  padding: 14px 0 14px 16px;
+  border: 1px solid var(--basic-neutral);
+  border-radius: 4px;
+  color: inherit;
+  outline: none;
+}
+
+.site-search-field::placeholder {
+  color: var(--basic-neutral);
+}
+
+/* User Menu – Login submenu */
+
+.login-popup {
+  padding: 48px;
+}
+
+.login-form-title {
+  margin-bottom: 32px;
+}
+
+.fields-wrapper {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.login-form-field {
+  width: 324px;
+  min-height: 48px;
+  padding: 14px 0 14px 16px;
+  border: 1px solid var(--basic-neutral);
+  border-radius: 4px;
+  color: inherit;
+  outline: none;
+}
+
+.login-form-field::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.login-form-field:first-of-type {
+  margin-bottom: 16px;
+}
+
+.login-form-field:last-of-type {
+  margin-bottom: 32px;
+}
+
+.login-form-submit-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto auto;
+  column-gap: 23px;
+}
+
+.login-form-button {
+  grid-row: 1/4;
+}
+
+.login-form-link {
+  color: var(--basic-extra-dark);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* User Menu – Cart submenu */
+
+.cart-popup {
+  padding: 48px;
+}
+
+.cart-popup-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.cart-popup-title {
+  margin-bottom: 32px;
+}
+
+.cart-popup-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 345px;
+  margin-bottom: 24px;
+}
+
+.cart-popup-item:last-child {
+  margin-bottom: 32px;
+}
+
+.cart-popup-item:last-child::after {
+  margin-top: 32px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--basic-neutral);
+  content: "";
+}
+
+.cart-popup-product-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 16px;
+}
+
+.cart-popup-product-img {
+  grid-row: 1/4;
+}
+
+.cart-popup-product-description {
+  color: var(--basic-neutral);
+}
+
+.cart-popup-delete-button {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border: none;
+  background-image: url("../images/header/icons/icon-cart-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cart-popup-delete-button:hover {
+  opacity: 0.6;
+}
+
+.cart-popup-delete-button:active {
+  opacity: 0.3;
+}
+
+.cart-popup-order-button {
+  max-width: 198px;
+  margin-right: 27px;
+}
+
+/* ANCHOR FOOTER */
+
+/* Layout */
+
+.page-footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 14px 48px 4px;
+}
+
+/* Social list */
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 104px;
+  margin: 0;
+  margin-right: auto;
+  margin-bottom: -16px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-social-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+  background-image: url("../images/icons/icon-telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-social-link[href*="vk.com"] {
+  background-image: url("../images/icons/icon-vk.svg");
+}
+
+.footer-social-link[href*="youtube.com"] {
+  background-image: url("../images/icons/icon-youtube.svg");
+}
+
+.footer-social-link:hover {
+background-color: var(--basic-extra-dark);
+}
+
+.footer-social-link:active {
+  background-color: var(--basic-extra-dark);
+  opacity: 0.5;
+}
+
+.footer-social-link:focus-visible {
+  background-color: var(--basic-extra-dark);
+  outline-color: var(--basic-extra-dark);
+}
+
+/* Menu list */
+
+
+
+/* ANCHOR INDEX */
+
+.footer-menu-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 8px;
+  column-gap: 24px;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-menu-item {
+
+}
+
+.footer-menu-title {
+  position: relative;
+  display: flex;
+  margin: 0;
+}
+
+.footer-menu-title::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -24px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/footer/icons/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.footer-menu-link {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Footer logo */
+
+.footer-logo-link {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.footer-logo-text {
+margin: 0;
+}
+
+.footer-logo-text-link {
+  color: inherit;
+}
+
+
+/*
+.footer-menu-link:hover {
+  outline: none;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.footer-menu-link:active {
+  outline: none;
+  background-color: var(--basic-white);
+}
+
+.footer-menu-link:focus-within {
+  background-color: var(--special-extra-bright);
+  color: var(--basic-extra-light)
+}
+
+/* Alternate class for JS */ /*
+.footer-menu-link-is-active {
+  background-color: var(--special-extra-bright);
+  color: var(--basic-extra-light)
+} FIXME */
+
+/* ANCHOR CATALOG */
