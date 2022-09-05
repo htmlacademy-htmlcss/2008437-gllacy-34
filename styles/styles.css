@@ -1286,5 +1286,70 @@ margin: 0;
   padding: 0;
 }
 
+/* Section Popular (Catalog) products */
+
+
+
+.company-features {
+  padding: 24px;
+  border-radius: 16px;
+  background-image: url("../images/index/backgrounds/background-waffel.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.company-features-wrapper {
+  padding: 56px 40px;
+  background-color: var(--basic-white);
+  border-radius: 16px;
+}
+
+.company-features-title {
+  width: 995px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  text-align: center;
+}
+
+.company-features-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 31px;
+  row-gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.company-features-text {
+  position: relative;
+  padding-left: 64px;
+}
+
+.company-features-text::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/index/icons/icon-feature-1.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  content: "";
+}
+
+.company-features-item:nth-child(2) .company-features-text::before {
+  background-image: url("../images/index/icons/icon-feature-2.svg");
+}
+
+.company-features-item:nth-child(3) .company-features-text::before {
+  background-image: url("../images/index/icons/icon-feature-3.svg");
+}
+
+.company-features-item:nth-child(4) .company-features-text::before {
+  background-image: url("../images/index/icons/icon-feature-4.svg");
+}
+
+
 
 /* ANCHOR CATALOG */
