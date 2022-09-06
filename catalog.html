@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="ico" href="favicon.ico">
-    <link rel="ico" type="image/png" href="./images/favicon.png">
+    <link rel="ico" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
 
   <body>
     <header class="page-header container">
       <a href="index.html" class="header-logo">
-        <img class="header-logo-img" src="./images/header/logo.svg" width="137" height="56" alt="Логотип магазина «Глэйси».">
+        <img class="header-logo-img" src="images/header/logo.svg" width="137" height="56" alt="Логотип магазина «Глэйси».">
       </a>
       <nav class="header-navigation">
         <ul class="header-navigation-list">
@@ -19,54 +19,54 @@
             <button class="header-navigation-link button" type="button">Каталог</button>
             <ul class="submenu-list header-popup">
               <li class="submenu-item">
-                <a class="submenu-link label-1 label-bold" href="/new.html">Новинки</a>
+                <a class="submenu-link label-1 label-bold" href="#">Новинки</a>
               </li>
               <li class="submenu-item">
-                <a class="submenu-link label-1" href="/creamy.html">Сливочное</a>
+                <a class="submenu-link label-1" href="catalog.html">Сливочное</a>
               </li>
               <li class="submenu-item">
-                <a class="submenu-link label-1" href="/sherbets.html">Щербеты</a>
+                <a class="submenu-link label-1" href="#">Щербеты</a>
               </li>
               <li class="submenu-item">
-                <a class="submenu-link label-1" href="/fruit-ice.html">Фруктовый лед</a>
+                <a class="submenu-link label-1" href="#">Фруктовый лед</a>
               </li>
               <li class="submenu-item">
-                <a class="submenu-link label-1" href="/melorin.html">Мелорин</a>
+                <a class="submenu-link label-1" href="#">Мелорин</a>
               </li>
             </ul>
           </li>
           <li class="header-navigation-item">
-            <a href="/delivery-payments.html" class="header-navigation-link button paragraph-3">Доставка и оплата</a>
+            <a href="#" class="header-navigation-link button paragraph-3">Доставка и оплата</a>
           </li>
           <li class="header-navigation-item">
-            <a href="/about-company.html" class="header-navigation-link button paragraph-3">О компании</a>
+            <a href="#" class="header-navigation-link button paragraph-3">О компании</a>
           </li>
         </ul>
       </nav>
       <div class="user-menu">
         <a href="tel:88005558628" class="header-phone paragraph-bold">+7 800 555-86-28</a>
         <div class="header-button-wrapper">
-          <button class="header-button button button-search label-1">
+          <button class="header-button button button-search label-1" type="button">
             <span class="visually-hidden">Поиск по сайту</span>
           </button>
           <div class="header-popup site-search-popup">
             <form class="site-search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="site-search-field paragraph-3" type="search" name="searchquery" placeholder="Поиск по сайту" aria-label="Поисковая строка">
+              <input class="site-search-field paragraph-3" type="search" name="searchquery" placeholder="Поиск по сайту" aria-label="Поисковая строка.">
             </form>
           </div>
         </div>
         <div class="header-button-wrapper">
-          <button class="header-button button button-login label-1">Вход</button>
+          <button class="header-button button button-login label-1" type="button">Вход</button>
           <div class="header-popup login-popup">
             <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="fields-wrapper">
                 <legend class="login-form-title title-3">Личный кабинет</legend>
-                <input class="login-form-field paragraph-3" type="email" name="email" placeholder="email@example.com" aria-label="Электронная почта">
-                <input class="login-form-field paragraph-3" type="password" name="password" placeholder="12345" value="12345" aria-label="Электронная почта">
+                <input class="login-form-field paragraph-3" type="email" name="email" placeholder="email@example.com" aria-label="Электронная почта.">
+                <input class="login-form-field paragraph-3" type="password" name="password" placeholder="12345" value="12345" aria-label="Пароль.">
                 <div class="login-form-submit-wrapper">
-                  <button class="login-form-button button button-secondary">Войти</button>
-                  <a class="login-form-link" href="/restore-password.html">Забыли пароль?</a>
-                  <a class="login-form-link" href="/sign-up.html">Регистрация</a>
+                  <button class="login-form-button button button-secondary" type="button">Войти</button>
+                  <a class="login-form-link" href="#">Забыли пароль?</a>
+                  <a class="login-form-link" href="#">Регистрация</a>
                 </div>
               </fieldset>
             </form>
@@ -74,14 +74,14 @@
         </div>
         <div class="header-button-wrapper">
           <span class="visually-hidden">Корзина</span>
-          <button class="header-button button button-cart label-1">2 товара</button>
+          <button class="header-button button button-cart label-1" type="button">2 товара</button>
           <div class="header-popup cart-popup">
             <div class="cart-popup-wrapper">
               <h3 class="cart-popup-title title-3">Корзина</h3>
               <ul class="cart-popup-list">
                 <li class="cart-popup-item">
                   <div class="cart-popup-product-wrapper">
-                    <img class="cart-popup-product-img" src="./images/catalog/product-1.png" width="46" height="46" alt="Мороженое с малиной.">
+                    <img class="cart-popup-product-img" src="images/catalog/product-1.png" width="46" height="46" alt="Мороженое с малиной.">
                     <h4 class="cart-popup-product-title title-6">Малинка</h4>
                     <span class="cart-popup-product-description label-1">1 кг х 310 ₽</span>
                   </div>
@@ -92,7 +92,7 @@
                 </li>
                 <li class="cart-popup-item">
                   <div class="cart-popup-product-wrapper">
-                    <img class="cart-popup-product-img" src="./images/catalog/product-4.png" width="46" height="46" alt="Мороженое Бабл-Гам.">
+                    <img class="cart-popup-product-img" src="images/catalog/product-4.png" width="46" height="46" alt="Мороженое Бабл-Гам.">
                     <h4 class="cart-popup-product-title title-6">Бабл-Гам</h4>
                     <span class="cart-popup-product-description label-1">1,5 кг х 320 ₽</span>
                   </div>
@@ -103,7 +103,7 @@
                 </li>
               </ul>
               <div class="cart-popup-button-wrapper">
-                <a href="/order.html" class="cart-popup-order-button button button-secondary">Оформить заказ</a>
+                <a href="#" class="cart-popup-order-button button button-secondary">Оформить заказ</a>
                 <span class="cart-popup-total-price title-6">Итого: 790 ₽</span>
               </div>
             </div>
@@ -121,7 +121,7 @@
       <h1 class="visually-hidden">Каталог мороженого</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="">Главная</a>
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
           <span class="breadcrumbs-link">Каталог</span>
@@ -130,7 +130,7 @@
       <section class="catalog">
         <h2 class="catalog-title">Сливочное мороженое</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="catalog-filter-label" aria-label="Сортировка результатов">
+          <label class="catalog-filter-label" aria-label="Сортировка результатов.">
             Сортировка:
             <select class="catalog-filter-field">
               <option value="Popular">Популярные</option>
@@ -144,11 +144,11 @@
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
                   Цена:&nbsp;
-                  <input class="range-input" type="number" value="100" name="min-price" aria-label="Значение минимальной цены">
+                  <input class="range-input" type="number" value="100" name="min-price" aria-label="Значение минимальной цены.">
                 </label>
                 <label class="catalog-filter-label">
                   ₽ –&nbsp;
-                  <input class="range-input" type="number" value="500" name="max-price" aria-label="Значение максимальной цены"> ₽
+                  <input class="range-input" type="number" value="500" name="max-price" aria-label="Значение максимальной цены."> ₽
                 </label>
               </div>
               <div class="range-scale">
@@ -168,28 +168,28 @@
               <ul class="catalog-filter-form-list catalog-filter-form-list-radio">
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="fat" value="0%" aria-label="Выбрать товары с нулевой жирностью">
+                    <input class="control-input visually-hidden" type="radio" name="fat" value="0%" aria-label="Выбрать товары с нулевой жирностью.">
                     <span class="control-mark-radio"></span>
                     <span class="control-label">0%</span>
                   </label>
                 </li>
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="fat" value="<10%" aria-label="Выбрать товары с жирностью менее 10%">
+                    <input class="control-input visually-hidden" type="radio" name="fat" value="<10%" aria-label="Выбрать товары с жирностью менее 10%.">
                     <span class="control-mark-radio"></span>
                     <span class="control-label">до 10%</span>
                   </label>
                 </li>
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="fat" value="<30%" aria-label="Выбрать товары с жирностью до 30%">
+                    <input class="control-input visually-hidden" type="radio" name="fat" value="<30%" aria-label="Выбрать товары с жирностью до 30%.">
                     <span class="control-mark-radio"></span>
                     <span class="control-label">до 30%</span>
                   </label>
                 </li>
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="fat" value=">30%" aria-label="Выбрать товары с жирностью выше 30%">
+                    <input class="control-input visually-hidden" type="radio" name="fat" value=">30%" aria-label="Выбрать товары с жирностью выше 30%.">
                     <span class="control-mark-radio"></span>
                     <span class="control-label">выше 30%</span>
                   </label>
@@ -201,35 +201,35 @@
               <ul class="catalog-filter-form-list">
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" name="filler" value="chocolate" type="checkbox" aria-label="Выбрать шоколадные наполнители" checked>
+                    <input class="control-input visually-hidden" name="filler" value="chocolate" type="checkbox" aria-label="Выбрать шоколадные наполнители." checked>
                     <span class="control-mark"></span>
                     <span class="control-label">шоколадные</span>
                   </label>
                 </li>
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" name="filler" value="sugar-fillers" type="checkbox" aria-label="Выбрать сахарные наполнители" checked>
+                    <input class="control-input visually-hidden" name="filler" value="sugar-fillers" type="checkbox" aria-label="Выбрать сахарные наполнители." checked>
                     <span class="control-mark"></span>
                     <span class="control-label">сахарные посыпки</span>
                   </label>
                 </li>
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" name="filler" value="fruits" type="checkbox" aria-label="Выбратьнаполнители с фруктами">
+                    <input class="control-input visually-hidden" name="filler" value="fruits" type="checkbox" aria-label="Выбратьнаполнители с фруктами.">
                     <span class="control-mark"></span>
                     <span class="control-label">фрукты</span>
                   </label>
                 </li>
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" name="filler" value="syrops" type="checkbox" aria-label="Выбрать наполнители с сиропами">
+                    <input class="control-input visually-hidden" name="filler" value="syrops" type="checkbox" aria-label="Выбрать наполнители с сиропами.">
                     <span class="control-mark"></span>
                     <span class="control-label">сиропы</span>
                   </label>
                 </li>
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" name="filler" value="jams" type="checkbox" aria-label="Выбрать наполнители с джемами">
+                    <input class="control-input visually-hidden" name="filler" value="jams" type="checkbox" aria-label="Выбрать наполнители с джемами.">
                     <span class="control-mark"></span>
                     <span class="control-label">джемы</span>
                   </label>
@@ -244,7 +244,7 @@
         <h2 class="catalog-products-title visually-hidden">Выбранные товары</h2>
         <ul class="catalog-products-list">
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-1.png" width="168" height="168" alt="Малиновый шарик мороженого.">
+            <img class="catalog-products-img" src="images/catalog/product-1.png" width="168" height="168" alt="Малиновый шарик мороженого.">
             <h3 class="catalog-products-item-title title-4">
               Малинка
             </h3>
@@ -262,7 +262,7 @@
             </p>
           </li>
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-2.png" width="168" height="168" alt="Фисташковый шарик мороженого.">
+            <img class="catalog-products-img" src="images/catalog/product-2.png" width="168" height="168" alt="Фисташковый шарик мороженого.">
             <h3 class="catalog-products-item-title title-4">
               Фисташка
             </h3>
@@ -280,7 +280,7 @@
             </p>
           </li>
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-3.png" width="168" height="168" alt="Черничный шарик мороженого.">
+            <img class="catalog-products-img" src="images/catalog/product-3.png" width="168" height="168" alt="Черничный шарик мороженого.">
             <h3 class="catalog-products-item-title title-4">
               Черника
             </h3>
@@ -298,7 +298,7 @@
             </p>
           </li>
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-4.png" width="168" height="168" alt="Шарик мороженого Бабл-гам.">
+            <img class="catalog-products-img" src="images/catalog/product-4.png" width="168" height="168" alt="Шарик мороженого Бабл-гам.">
             <h3 class="catalog-products-item-title title-4">
               Бабл-гам
             </h3>
@@ -316,7 +316,7 @@
             </p>
           </li>
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-5.png" width="168" height="168" alt="Ежевичный шарик мороженого.">
+            <img class="catalog-products-img" src="images/catalog/product-5.png" width="168" height="168" alt="Ежевичный шарик мороженого.">
             <h3 class="catalog-products-item-title title-4">
               Ежевика
             </h3>
@@ -334,7 +334,7 @@
             </p>
           </li>
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-6.png" width="168" height="168" alt="Банановый шарик мороженого.">
+            <img class="catalog-products-img" src="images/catalog/product-6.png" width="168" height="168" alt="Банановый шарик мороженого.">
             <h3 class="catalog-products-item-title title-4">
               Банан
             </h3>
@@ -352,7 +352,7 @@
             </p>
           </li>
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-7.png" width="168" height="168" alt="Шоколадный шарик мороженого.">
+            <img class="catalog-products-img" src="images/catalog/product-7.png" width="168" height="168" alt="Шоколадный шарик мороженого.">
             <h3 class="catalog-products-item-title title-4">
               Шоколадка
             </h3>
@@ -370,7 +370,7 @@
             </p>
           </li>
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-8.png" width="168" height="168" alt="Клубничный шарик мороженого.">
+            <img class="catalog-products-img" src="images/catalog/product-8.png" width="168" height="168" alt="Клубничный шарик мороженого.">
             <h3 class="catalog-products-item-title title-4">
               Клубничка
             </h3>
@@ -388,7 +388,7 @@
             </p>
           </li>
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-9.png" width="168" height="168" alt="Лимонный шарик мороженого.">
+            <img class="catalog-products-img" src="images/catalog/product-9.png" width="168" height="168" alt="Лимонный шарик мороженого.">
             <h3 class="catalog-products-item-title title-4">
               Лимон
             </h3>
@@ -406,7 +406,7 @@
             </p>
           </li>
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-10.png" width="168" height="168" alt="Ментоловый шарик мороженого.">
+            <img class="catalog-products-img" src="images/catalog/product-10.png" width="168" height="168" alt="Ментоловый шарик мороженого.">
             <h3 class="catalog-products-item-title title-4">
               Ментол
             </h3>
@@ -424,7 +424,7 @@
             </p>
           </li>
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-11.png" width="168" height="168" alt="Ореховый шарик мороженого.">
+            <img class="catalog-products-img" src="images/catalog/product-11.png" width="168" height="168" alt="Ореховый шарик мороженого.">
             <h3 class="catalog-products-item-title title-4">
               Орешек
             </h3>
@@ -442,7 +442,7 @@
             </p>
           </li>
           <li class="catalog-products-item">
-            <img class="catalog-products-img" src="./images/catalog/product-12.png" width="168" height="168" alt="Шарик мороженого крем-брюле.">
+            <img class="catalog-products-img" src="images/catalog/product-12.png" width="168" height="168" alt="Шарик мороженого крем-брюле.">
             <h3 class="catalog-products-item-title title-4">
               Крем-брюле
             </h3>
@@ -461,24 +461,24 @@
           </li>
         </ul>
         <div class="pagination-container">
-          <button class="pagination-button-more button">Показать еще</button>
+          <button class="pagination-button-more button" type="button">Показать еще</button>
           <div class="pagination-container">
             <a class="pagination-button" href="#">Назад</a>
             <ul class="pagination">
               <li class="pagination-item">
-                <a class="pagination-link" href="catalog.html">1</a>
+                <a class="pagination-link" href="#">1</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="catalog-page-2.html">2</a>
+                <a class="pagination-link" href="#">2</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link pagination-link-is-active" href="catalog-page-3.html">3</a>
+                <span class="pagination-link pagination-link-is-active">3</span>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="catalog-page-4.html">4</a>
+                <a class="pagination-link" href="#">4</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="catalog-page-5.html">5</a>
+                <a class="pagination-link" href="#">5</a>
               </li>
             </ul>
             <a class="pagination-button" href="#">Вперед</a>
@@ -511,18 +511,18 @@
             <h3 class="footer-menu-title label-bold">Для поставщиков</h3>
           </li>
           <li class="footer-menu-item">
-            <a href="/documents.html" class="footer-menu-link label-1">Наши документы</a>
+            <a class="footer-menu-link label-1" href="#">Наши документы</a>
           </li>
           <li class="footer-menu-item">
-            <a href="/manufacture.html" class="footer-menu-link label-1">О производстве</a>
+            <a class="footer-menu-link label-1" href="#">О производстве</a>
           </li>
           <li class="footer-menu-item">
-            <a href="/ecological-standarts.html" class="footer-menu-link label-1">Экологические стандарты</a>
+            <a class="footer-menu-link label-1" href="#">Экологические стандарты</a>
           </li>
         </ul>
         <div class="footer-logo-wrapper">
-          <a href="https://htmlacademy.ru/" class="footer-logo-link">
-            <img class="footer-logo" src="./images/footer/logo-htmlacademy.svg" width="93" height="27" alt="Лого HTML Academy.">
+          <a class="footer-logo-link" href="#">
+            <img class="footer-logo" src="images/footer/logo-htmlacademy.svg" width="93" height="27" alt="Лого HTML Academy.">
           </a>
           <p class="footer-logo-text label-2">Сделано в <a href="https://htmlacademy.ru/" class="footer-logo-text-link">.html academy</a> © 2021</p>
         </div>
@@ -534,15 +534,15 @@
       <div class="modal">
         <section class="modal-content">
           <h2 class="visually-hidden">Форма обратной связи</h2>
-          <button class="modal-close">
+          <button class="modal-close" type="button">
             <span class="visually-hidden">Закрыть модальное окно</span>
           </button>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="modal-fieldset">
               <legend class="modal-legend">Мы обязательно ответим вам!</legend>
-              <input class="modal-field" type="text" name="name" placeholder="Имя и фамилия" aria-label="Имя и фамилия">
-              <input class="modal-field" type="email" name="email" placeholder="email@example.com" aria-label="Электронная почта">
-              <textarea class="modal-field" name="email" placeholder="В свободной форме" aria-label="Ваш вопрос или пожелание">
+              <input class="modal-field" type="text" name="name" placeholder="Имя и фамилия" aria-label="Имя и фамилия.">
+              <input class="modal-field" type="email" name="email" placeholder="email@example.com" aria-label="Электронная почта.">
+              <textarea class="modal-field" name="email" placeholder="В свободной форме" aria-label="Ваш вопрос или пожелание.">
               </textarea>
               <button class="modal-button button" type="submit">Отправить</button>
             </fieldset>

@@ -26,87 +26,27 @@
 
 /* VARIABLES */
 
-/* Basic colors */
+/* Colors & Shadows*/
 
 :root {
   --basic-extra-dark: #2d3440;
-}
-
-:root {
   --basic-dark: #565c66;
-}
-
-:root {
   --basic-neutral: #b9b9b9;
-}
-
-:root {
   --basic-light: #e7e7e7;
-}
-
-:root {
   --basic-extra-light: #fcfcfc;
-}
-
-:root {
   --basic-white: #ffffff;
-}
-
-/* Special colors */
-
-:root {
   --special-extra-bright: #ff2f64;
-}
-
-:root {
   --special-bright: #ff4a78;
-}
-
-:root {
   --special-neutral: #ff7799;
-}
-
-:root {
   --special-light: #feafc3;
-}
-
-:root {
   --special-extra-light: #ffcbd8;
-}
-
-:root {
   --special-blue: #69a9ff;
-}
-
-:root {
   --special-yellow: #fcc850;
-}
-
-/* Status colors */
-
-:root {
   --status-error: #ea5454;
-}
-
-:root {
   --status-warning: #fd912e;
-}
-
-:root {
   --status-success: #00e484;
-}
-
-/* Shadows */
-
-:root {
   --shadow-small: 0 4px 12px rgba(45, 52, 64, 0.1);
-}
-
-:root {
   --shadow-medium: 0 8px 16px rgba(45, 52, 64, 0.12);
-}
-
-:root {
   --shadow-large: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
@@ -153,6 +93,7 @@
   outline: 4px solid rgba(252, 252, 252, 0.4);
   background-color: var(--basic-light);
   color: var(--basic-neutral);
+  pointer-events: none;
 }
 
 .button-loading {
@@ -196,7 +137,7 @@
   background-color: var(--special-light);
 }
 
-.button-secondary:focus-within:enabled {
+.button-secondary:focus-visible:enabled {
   outline: 2px solid var(--basic-extra-dark);
 }
 
@@ -452,7 +393,7 @@ img {
   box-shadow: none;
 }
 
-.header-navigation-link:focus-within {
+.header-navigation-link:focus-visible {
   background-color: var(--special-extra-bright);
   color: var(--basic-extra-light);
   box-shadow: none;
@@ -468,7 +409,7 @@ img {
 /* Navigation – Popup window */
 
 .header-button-wrapper:focus-within .header-popup,
-.header-navigation-link:focus-within + .header-popup {
+.header-navigation-item:focus-within .header-popup {
   display: block;
 }
 
@@ -1231,13 +1172,10 @@ margin: 0;
   display: grid;
   grid-template-columns: repeat(4, 270px);
   gap: 30px;
+  row-gap: 91px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.catalog-products-list {
-  row-gap: 91px;
 }
 
 .popular-products-item,
@@ -1287,8 +1225,6 @@ margin: 0;
 }
 
 /* Section Popular (Catalog) products */
-
-
 
 .company-features {
   padding: 24px;
