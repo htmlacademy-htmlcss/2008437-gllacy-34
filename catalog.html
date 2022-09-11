@@ -121,38 +121,29 @@
       <h1 class="visually-hidden">Каталог мороженого</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <a class="breadcrumbs-link label-bold" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <span class="breadcrumbs-link">Каталог</span>
+          <a class="breadcrumbs-link breadcrumbs-link-current label-bold">Каталог</a>
         </li>
       </ul>
       <section class="catalog">
-        <h2 class="catalog-title">Сливочное мороженое</h2>
+        <h2 class="catalog-title title-2">Сливочное мороженое</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="catalog-filter-label" aria-label="Сортировка результатов.">
-            Сортировка:
-            <select class="catalog-filter-field">
-              <option value="Popular">Популярные</option>
-              <option value="Cheap">Сначала дешевые</option>
-              <option value="Expensive">Сначала дорогие</option>
-            </select>
-          </label>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-group-name visually-hidden">Стоимость</legend>
+            <legend class="catalog-filter-group-name label-1">Сортировка:</legend>
+              <select class="catalog-filter-select label-1">
+                <option value="Popular">по пулярности</option>
+                <option value="Cheap">сначала дешевые</option>
+                <option value="Expensive">сначала дорогие</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-group-name label-1">Цена: 100 ₽ – 500 ₽</legend>
             <div class="range">
-              <div class="range-wrapper-inputs">
-                <label class="catalog-filter-label">
-                  Цена:&nbsp;
-                  <input class="range-input" type="number" value="100" name="min-price" aria-label="Значение минимальной цены.">
-                </label>
-                <label class="catalog-filter-label">
-                  ₽ –&nbsp;
-                  <input class="range-input" type="number" value="500" name="max-price" aria-label="Значение максимальной цены."> ₽
-                </label>
-              </div>
               <div class="range-scale">
-                <div class="range-bar" style="left: 0; width: 119px;">
+                <div class="range-bar" style="left: 40px; width: 88px;">
                   <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную стоимость</span>
                   </button>
@@ -164,8 +155,8 @@
             </div>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-group-name">Жирность:</legend>
-              <ul class="catalog-filter-form-list catalog-filter-form-list-radio">
+            <legend class="catalog-filter-group-name label-1">Жирность:</legend>
+              <ul class="catalog-filter-form-list catalog-filter-form-list-radio label-1">
                 <li class="catalog-list-item">
                   <label class="control">
                     <input class="control-input visually-hidden" type="radio" name="fat" value="0%" aria-label="Выбрать товары с нулевой жирностью.">
@@ -197,8 +188,8 @@
               </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-group-name">Наполнители:</legend>
-              <ul class="catalog-filter-form-list">
+            <legend class="catalog-filter-group-name label-1">Наполнители:</legend>
+              <ul class="catalog-filter-form-list label-1">
                 <li class="catalog-list-item">
                   <label class="control">
                     <input class="control-input visually-hidden" name="filler" value="chocolate" type="checkbox" aria-label="Выбрать шоколадные наполнители." checked>
@@ -236,7 +227,7 @@
                 </li>
               </ul>
           </fieldset>
-          <button class="catalog-form-button" type="submit">Применить</button>
+          <button class="catalog-form-button button button-third" type="submit">Применить</button>
         </form>
       </section>
 
@@ -460,28 +451,28 @@
             </p>
           </li>
         </ul>
-        <div class="pagination-container">
+        <div class="pagination-wrapper">
           <button class="pagination-button-more button" type="button">Показать еще</button>
           <div class="pagination-container">
-            <a class="pagination-button" href="#">Назад</a>
+            <a class="pagination-button pagination-button-back" href="#"><span class="visually-hidden">Назад</span></a>
             <ul class="pagination">
               <li class="pagination-item">
-                <a class="pagination-link" href="#">1</a>
+                <a class="pagination-link paragraph-3" href="#">1</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
+                <a class="pagination-link paragraph-3" href="#">2</a>
               </li>
               <li class="pagination-item">
-                <span class="pagination-link pagination-link-is-active">3</span>
+                <span class="pagination-link pagination-link-is-active paragraph-3">3</span>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">4</a>
+                <a class="pagination-link paragraph-3" href="#">4</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">5</a>
+                <a class="pagination-link paragraph-3" href="#">5</a>
               </li>
             </ul>
-            <a class="pagination-button" href="#">Вперед</a>
+            <a class="pagination-button pagination-button-forward" href="#"><span class="visually-hidden">Вперед</span></a>
           </div>
         </div>
       </section>
