@@ -427,7 +427,8 @@
 .paragraph-bold {
   margin: 0;
   font-weight: 400;
-  font-style: normal
+  font-style: normal;
+  color: var(--basic-dark);
 }
 
 .paragraph-2 {
@@ -453,6 +454,7 @@ line-height: 20px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  color: var(--basic-dark);
 }
 
 .label-bold {
@@ -877,19 +879,22 @@ padding: 8px 0 8px 16px;
   height: 24px;
   border-radius: 50%;
   outline: 2px solid rgba(252, 252, 252, 0.3);
-  background-image: url("../images/icons/icon-telegram.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* FIXME */
-.footer-social-link[href*="vk.com"],
-.slide-social-link[href*="vk.com"] {
+.footer-social-link-tg,
+.slide-social-link-tg {
+  background-image: url("../images/icons/icon-telegram.svg");
+}
+
+.footer-social-link-vk,
+.slide-social-link-vk {
   background-image: url("../images/icons/icon-vk.svg");
 }
 
-.footer-social-link[href*="youtube.com"],
-.slide-social-link[href*="youtube.com"] {
+.footer-social-link-yt,
+.slide-social-link-yt {
   background-image: url("../images/icons/icon-youtube.svg");
 }
 
@@ -929,6 +934,7 @@ background-color: var(--basic-extra-dark);
   position: relative;
   display: flex;
   margin: 0;
+  color: var(--basic-extra-dark);
 }
 
 .footer-menu-title::before {
@@ -946,8 +952,23 @@ background-color: var(--basic-extra-dark);
 
 .footer-menu-link {
   display: flex;
-  color: inherit;
+  color: var(--basic-extra-dark);
   text-decoration: none;
+}
+
+/* Styles added NOT from a figma design layout,
+just to improve a visual style (ANCHOR) */
+
+.footer-menu-link:hover {
+  opacity: 0.5;
+}
+
+.footer-menu-link:active {
+  opacity: 0.3;
+}
+
+.footer-menu-link:active {
+  opacity: 0.3;
 }
 
 /* Footer logo */
@@ -964,29 +985,6 @@ margin: 0;
 .footer-logo-text-link {
   color: inherit;
 }
-
-
-/*
-.footer-menu-link:hover {
-  outline: none;
-  background-color: rgba(252, 252, 252, 0.5);
-}
-
-.footer-menu-link:active {
-  outline: none;
-  background-color: var(--basic-white);
-}
-
-.footer-menu-link:focus-within {
-  background-color: var(--special-extra-bright);
-  color: var(--basic-extra-light)
-}
-
-/* Alternate class for JS */ /*
-.footer-menu-link-is-active {
-  background-color: var(--special-extra-bright);
-  color: var(--basic-extra-light)
-} FIXME */
 
 /* ANCHOR MAIN LAYOUT */
 
@@ -1217,20 +1215,19 @@ margin: 0;
 .gifts-item {
   width: 570px;
   padding: 36px;
+  padding-right: 206px;
   background-color: var(--special-neutral);
   border-radius: 16px;
-  background-image: url("../images/index/gift-2.png");
   background-repeat: no-repeat;
   background-position: center right;
 }
 
-.gifts-item:first-child {
-  margin-right: 30px;
+.gifts-item-raspberry {
   background-image: url("../images/index/gift-1.png");
 }
 
-.gifts-description {
-  max-width: 328px;
+.gifts-item-marshmallow {
+  background-image: url("../images/index/gift-2.png");
 }
 
 .gifts-item-title {
@@ -1241,8 +1238,8 @@ margin: 0;
 .gifts-text {
   margin: 0;
   margin-bottom: 28px;
+  color: var(--basic-extra-dark);
 }
-
 
 /* Section Popular (Catalog) products */
 
@@ -1767,8 +1764,9 @@ margin: 0 auto;
   display: block;
   width: 196px;
   padding-right: 63px;
-  padding-left: 12px;
+  padding-left: 16px;
   appearance: none;
+  color: var(--basic-extra-dark);
   background-image: url("../images/catalog/icons/icon-select.svg");
   background-repeat: no-repeat;
   background-position: top 55% right 16px;
@@ -1779,11 +1777,9 @@ margin: 0 auto;
 }
 
 .catalog-filter-select:focus-visible {
-  background-color: rgba(252, 252, 252, 0.5);
-  padding: 6px 22px;
-  border: 2px solid var(--basic-extra-light);
-  background-position: top 55% right 14px;
-  outline: none;
+  background-color: rgba(252, 252, 252, 0.4);
+  outline: 2px solid var(--basic-extra-light);
+  outline-offset: -2px;
 }
 
 /* Filter – Range Slider */
