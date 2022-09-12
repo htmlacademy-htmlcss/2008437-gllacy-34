@@ -518,6 +518,14 @@ body {
   background-color: var(--special-light);
 }
 
+.body-blue {
+  background-color: var(--special-blue);
+}
+
+.body-yellow {
+  background-color: var(--special-yellow);
+}
+
 .main-index,
 .main-catalog {
   flex-grow: 1;
@@ -577,6 +585,10 @@ img {
 .header-navigation-item {
   position: relative;
   margin-bottom: 10px;
+}
+
+.header-navigation-link {
+  color: var(--basic-extra-dark);
 }
 
 /* Navigation – Popup window */
@@ -671,6 +683,10 @@ padding: 8px 0 8px 16px;
 .user-menu > .header-phone,
 .user-menu > .header-button-wrapper {
   margin-right: 16px;
+}
+
+.header-button {
+  color: var(--basic-extra-dark);
 }
 
 /* User menu – Phone */
@@ -957,7 +973,7 @@ background-color: var(--basic-extra-dark);
 }
 
 /* Styles added NOT from a figma design layout,
-just to improve a visual style (ANCHOR) */
+just to improve a visual style (ANCHOR – Non-essential styles) */
 
 .footer-menu-link:hover {
   opacity: 0.5;
@@ -1009,7 +1025,7 @@ margin: 0;
 .slide {
   display: none;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -1046,8 +1062,7 @@ margin: 0;
   margin-right: 57px;
 }
 
-.slide-image-wrapper::after,
-.slide-image-mini-wrapper::after {
+.slide-image-wrapper::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1350,6 +1365,7 @@ margin: 0;
   padding: 24px;
   border-radius: 16px;
   background-image: url("../images/index/backgrounds/background-waffel.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -1592,7 +1608,7 @@ margin: 0 auto;
   color: var(--basic-dark);
 }
 
-/* MODAL WINDOW */
+/* ANCHOR MODAL WINDOW  */
 
 /* Layout & Basic styles */
 
@@ -1650,13 +1666,14 @@ margin: 0 auto;
   margin-bottom: 32px;
 }
 
-.modal-textarea:nth-last-child(2) {
-  margin-bottom: 32px;
-}
-
 .modal-textarea {
   min-height: 149px;
   padding: 14px 16px;
+  margin-bottom: 32px;
+}
+
+.modal-textarea::placeholder {
+  font-family: "Inter";
 }
 
 .modal-button {
@@ -1862,13 +1879,14 @@ margin: 0 auto;
 }
 
 .control-mark-radio,
-.control-mark {
+.control-mark,
+.control-mark-icon {
   padding-left: 24px;
-  display: inline-block;
+  display: block;
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  border: 1.3px solid var(--basic-extra-dark);
+  border: 1.5px solid var(--basic-extra-dark);
   padding: 0;
 }
 
@@ -1878,6 +1896,20 @@ margin: 0 auto;
 
 .control-mark-radio {
   border-radius: 50%;
+}
+
+.control-mark-icon {
+  display: none;
+  border: none;
+}
+
+.control-input:checked ~ .control-mark {
+  display: none;
+}
+
+.control-input:checked ~ .control-mark-icon {
+  display: block;
+  color: black;
 }
 
 /* Pagination */
