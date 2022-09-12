@@ -1854,6 +1854,31 @@ margin: 0 auto;
   left: 76px;
 }
 
+.range-toggle:hover {
+  background-color: var(--basic-extra-light);
+}
+
+.range-toggle:hover:after {
+  background-color: var(--basic-extra-dark);
+}
+
+.range-toggle:active {
+  background-color: var(--basic-extra-dark);
+}
+
+.range-toggle:active:after {
+  background-color: var(--basic-extra-dark);
+}
+
+.range-toggle:focus-visible {
+  background-color: var(--basic-extra-light);
+  outline: 2px solid var(--basic-extra-dark);
+}
+
+.range-toggle:focus-visible:after {
+  background-color: var(--basic-extra-dark);
+}
+
 /* Filter – Radio & Checkboxes */
 
 .catalog-filter-form-list {
@@ -1879,37 +1904,68 @@ margin: 0 auto;
 }
 
 .control-mark-radio,
-.control-mark,
-.control-mark-icon {
-  padding-left: 24px;
-  display: block;
+.control-mark-icon,
+.control-mark-icon-empty {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  border: 1.5px solid var(--basic-extra-dark);
   padding: 0;
 }
 
-.control-mark {
-  border-radius: 2px;
-}
+/* Filter – Radio */
 
 .control-mark-radio {
+  position: relative;
+  border: 1.5px solid var(--basic-extra-dark);
   border-radius: 50%;
 }
+
+.control-input:checked ~ .control-mark-radio:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--basic-extra-dark);
+  content: "";
+}
+
+.control-input:hover:enabled ~ .control-mark-radio,
+.control-input:hover:enabled ~ .control-mark-icon,
+.control-input:hover:enabled ~ .control-mark-icon-empty {
+  border-color: var(--basic-extra-light);
+  color: var(--basic-extra-light);
+}
+
+.control-input:hover:enabled ~ .control-mark-radio:after {
+  background-color: var(--basic-extra-light);
+}
+
+.control-input:disabled ~ .control-mark-radio,
+.control-input:disabled ~ .control-mark-icon,
+.control-input:disabled ~ .control-mark-icon-empty {
+  opacity: 0.5;
+}
+
+.control-input:disabled ~ .control-mark-radio:after {
+  opacity: 0.5;
+}
+
+/* Filter – Checkboxes */
 
 .control-mark-icon {
   display: none;
   border: none;
 }
 
-.control-input:checked ~ .control-mark {
+.control-input:checked ~ .control-mark-icon-empty {
   display: none;
 }
 
 .control-input:checked ~ .control-mark-icon {
   display: block;
-  color: black;
 }
 
 /* Pagination */
