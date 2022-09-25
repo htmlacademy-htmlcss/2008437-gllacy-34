@@ -10,7 +10,7 @@
 
   <body>
     <header class="page-header container">
-      <a href="index.html" class="header-logo">
+      <a class="header-logo" href="index.html" aria-label="Возврат на главную страницу.">
         <img class="header-logo-img" src="images/header/logo.svg" width="137" height="56" alt="Логотип магазина «Глэйси».">
       </a>
       <nav class="header-navigation">
@@ -36,15 +36,15 @@
             </ul>
           </li>
           <li class="header-navigation-item">
-            <a href="#" class="header-navigation-link button-nav paragraph-3">Доставка и оплата</a>
+            <a class="header-navigation-link button-nav paragraph-3" href="#">Доставка и оплата</a>
           </li>
           <li class="header-navigation-item">
-            <a href="#" class="header-navigation-link button-nav paragraph-3">О компании</a>
+            <a class="header-navigation-link button-nav paragraph-3" href="#">О компании</a>
           </li>
         </ul>
       </nav>
       <div class="user-menu">
-        <a href="tel:88005558628" class="header-phone paragraph-bold">+7 800 555-86-28</a>
+        <a class="header-phone paragraph-bold" href="tel:88005558628">+7 800 555-86-28</a>
         <div class="header-button-wrapper">
           <button class="header-button button-menu button-search label-1" type="button">
             <span class="visually-hidden">Поиск по сайту</span>
@@ -103,7 +103,7 @@
                 </li>
               </ul>
               <div class="cart-popup-button-wrapper">
-                <a href="#" class="cart-popup-order-button button-secondary">Оформить заказ</a>
+                <a class="cart-popup-order-button button-secondary" href="#">Оформить заказ</a>
                 <span class="cart-popup-total-price title-6">Итого: 790 ₽</span>
               </div>
             </div>
@@ -128,7 +128,7 @@
         </li>
       </ul>
       <section class="catalog">
-        <h2 class="catalog-title title-2">Сливочное мороженое</h2>
+        <h2 class="catalog-title subtitle">Сливочное мороженое</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-group-name label-1">Сортировка:</legend>
@@ -188,7 +188,7 @@
               </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-group-name label-1">Наполнители:</legend>
+            <legend class="catalog-filter-group-name catalog-filter-group-name-fillers label-1">Наполнители:</legend>
               <ul class="catalog-filter-form-list label-1">
                 <li class="catalog-list-item">
                   <label class="control">
@@ -257,7 +257,7 @@
                 </li>
               </ul>
           </fieldset>
-          <button class="catalog-form-button button button-third" type="submit">Применить</button>
+          <button class="catalog-form-button button button-third label-bold" type="submit">Применить</button>
         </form>
       </section>
 
@@ -306,7 +306,7 @@
               Черника
             </h3>
             <p class="catalog-products-text paragraph-2">
-              Крем-брюле с черничным джемом
+              Крем-брюле <br>с черничным джемом
             </p>
             <p class="catalog-products-price-wrapper">
               <strong class="catalog-products-price title-4">330 ₽/кг</strong>
@@ -324,7 +324,7 @@
               Бабл-гам
             </h3>
             <p class="catalog-products-text paragraph-2">
-              Ванильный пломбир со сладкой посыпкой
+              Ванильный пломбир <br>со сладкой посыпкой
             </p>
             <p class="catalog-products-price-wrapper">
               <strong class="catalog-products-price title-4">320 ₽/кг</strong>
@@ -342,7 +342,7 @@
               Ежевика
             </h3>
             <p class="catalog-products-text paragraph-2">
-              Сливочное мороженое с ежевичным джемом
+              Сливочное мороженое <br>с ежевичным джемом
             </p>
             <p class="catalog-products-price-wrapper">
               <strong class="catalog-products-price title-4">330 ₽/кг</strong>
@@ -360,7 +360,7 @@
               Банан
             </h3>
             <p class="catalog-products-text paragraph-2">
-              Сливочный пломбир с банановым вкусом
+              Сливочный пломбир <br>с банановым вкусом
             </p>
             <p class="catalog-products-price-wrapper">
               <strong class="catalog-products-price title-4">340 ₽/кг</strong>
@@ -396,7 +396,7 @@
               Клубничка
             </h3>
             <p class="catalog-products-text paragraph-2">
-              Сливочный пломбир с клубничным вкусом
+              Сливочный пломбир <br>с клубничным вкусом
             </p>
             <p class="catalog-products-price-wrapper">
               <strong class="catalog-products-price title-4">300 ₽/кг</strong>
@@ -432,7 +432,7 @@
               Ментол
             </h3>
             <p class="catalog-products-text paragraph-2">
-              Сливочный пломбир с ментоловым сиропом
+              Сливочный пломбир <br>с ментоловым сиропом
             </p>
             <p class="catalog-products-price-wrapper">
               <strong class="catalog-products-price title-4">320 ₽/кг</strong>
@@ -450,7 +450,7 @@
               Орешек
             </h3>
             <p class="catalog-products-text paragraph-2">
-              Фисташковый пломбир с шоколадным сиропом
+              Фисташковый пломбир <br>с шоколадным сиропом
             </p>
             <p class="catalog-products-price-wrapper">
               <strong class="catalog-products-price title-4">360 ₽/кг</strong>
@@ -468,7 +468,7 @@
               Крем-брюле
             </h3>
             <p class="catalog-products-text paragraph-2">
-              Классическое крем-брюле
+              Классическое <br>крем-брюле
             </p>
             <p class="catalog-products-price-wrapper">
               <strong class="catalog-products-price title-4">280 ₽/кг</strong>
@@ -542,10 +542,10 @@
           </li>
         </ul>
         <div class="footer-logo-wrapper">
-          <a class="footer-logo-link" href="#">
+          <a class="footer-logo-link" href="https://htmlacademy.ru/" aria-label="Переход на страницу компании HTML Academy.">
             <img class="footer-logo" src="images/footer/logo-htmlacademy.svg" width="93" height="27" alt="Лого HTML Academy.">
           </a>
-          <p class="footer-logo-text label-2">Сделано в <a href="https://htmlacademy.ru/" class="footer-logo-text-link">.html academy</a> © 2021</p>
+          <p class="footer-logo-text label-2">Сделано в <a href="https://htmlacademy.ru/" class="footer-logo-text-link" aria-label="Переход на страницу компании HTML Academy">.html academy</a> © 2021</p>
         </div>
       </div>
     </footer>
