@@ -530,6 +530,9 @@ body {
 .main-index,
 .main-catalog {
   flex-grow: 1;
+}
+
+.main-catalog {
   padding-top: 29px;
 }
 
@@ -879,12 +882,15 @@ padding: 8px 0 8px 16px;
   justify-content: space-between;
   min-width: 104px;
   margin: 0;
-  margin-right: 323px;
   margin-bottom: -16px;
+  margin-right: auto;
   padding: 0;
   list-style-type: none;
 }
 
+.footer-social-list {
+  margin-right: 323px;
+}
 .footer-social-item:not(:last-child),
 .slide-social-item:not(:last-child) {
   margin-right: 16px;
@@ -1043,16 +1049,17 @@ margin: 0;
 
 .slide-content {
   width: 470px;
-  margin-right: 21px;
+  margin-top: 4px;
+  margin-right: 24px;
 }
 
 .slide-title {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .slide-text {
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 46px;
 }
 
 .slide-image-wrapper,
@@ -1064,13 +1071,9 @@ margin: 0;
   margin-right: 56px;
 }
 
-.slide-image-mini-wrapper {
-  margin-right: 57px;
-}
-
 .slide-image-wrapper::after {
   position: absolute;
-  top: 50%;
+  top: 50.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
@@ -1147,7 +1150,7 @@ margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate( -13%, -50%);
+  transform: translate( -12.5%, -50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1459,8 +1462,8 @@ margin: 0;
   padding: 33px 235px 32px 32px;
   background-color:var(--basic-extra-light);
   background-image: url("../images/index/backgrounds/background-serve.jpg");
-  background-position: -15px center;
-  background-size: 115% auto;
+  background-position: -8px center;
+  background-size: 115%;
   background-repeat: no-repeat;
   border-radius: 16px;
 }
