@@ -120,88 +120,93 @@
 
     <main class="main-index container">
       <h1 class="visually-hidden">Интернет-магазин мороженого «Глэйси».</h1>
-      <section class="promo-slider">
-        <h2 class="visually-hidden">Промо-товары.</h2>
-        <div class="slide slide-is-active">
-          <div class="slide-content">
-            <h3 class="slide-title title">Нежный пломбир с&nbsp;клубничным джемом</h3>
-            <p class="slide-text">
-              Натуральное мороженое из свежих сливок <br> и молока с&nbsp;вкуснейшим клубничным джемом <br> – это идеальный десерт для всей семьи.
-            </p>
-            <a class="button button-loading" href="#">Заказать</a>
+      <section class="slider">
+        <h2 class="visually-hidden">Промо-слайдер</h2>
+        <div class="slider__slides">
+          <div class="slider__slide is__active" data-color="#feafc3">
+            <div class="slider__content">
+              <h3 class="slider__title">Нежный пломбир с&nbsp;клубничным джемом</h3>
+              <p class="slider__description">Натуральное мороженое из свежих сливок
+                и&nbsp;молока с вкуснейшим клубничным джемом <br> – это&nbsp;идеальный десерт для всей семьи. </p>
+              <a class="button" href="#">Заказать</a>
+            </div>
+            <div class="slider__image__wrapper">
+              <img class="slider__image" src="images/index/promo-product-1.png"
+                alt="Вафельный рожок мороженого пломбир с клубничным джемом." width="306" height="507">
+            </div>
           </div>
-          <div class="slide-image-wrapper">
-            <img class="slide-image" src="images/index/promo-product-1.png" width="306" height="507" alt="Рожок клубничного мороженого.">
+          <div class="slider__slide" data-color="#69a9ff">
+            <div class="slider__content">
+              <h3 class="slider__title">Сливочное мороженое со вкусом банана</h3>
+              <p class="slider__description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
+                наслаждение даже в самый жаркий летний день. </p>
+              <!-- При задержке кнопкам добавляется класс loading -->
+              <a class="button" href="#">Заказать</a>
+            </div>
+            <div class="slider__image__wrapper">
+              <img class="slider__image" src="images/index/promo-product-2.png"
+                alt="Вафельный рожок сливочного бананового мороженого." width="306" height="507">
+            </div>
+          </div>
+          <div class="slider__slide" data-color="#fcc850">
+            <div class="slider__content">
+              <h3 class="slider__title">Карамельный пломбир с маршмеллоу</h3>
+              <p class="slider__description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
+                сердца сладкоежек всех возрастов.</p>
+              <a class="button" href="#">Заказать</a>
+            </div>
+            <div class="slider__image__wrapper">
+              <img class="slider__image" src="images/index/promo-product-3.png"
+                alt="Вафельный рожок карамельного мороженого с маршмеллоу." width="306" height="507">
+            </div>
           </div>
         </div>
-        <div class="slide">
-          <div class="slide-content">
-            <h3 class="slide-title title">Сливочное мороженое со вкусом банана</h3>
-            <p class="slide-text">
-              Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.
-            </p>
-            <a class="button" href="#">Заказать</a>
-          </div>
-          <div class="slide-image-wrapper">
-            <img class="slide-image" src="images/index/promo-product-2.png" width="306" height="507" alt="Рожок бананового мороженого.">
-          </div>
-        </div>
-        <div class="slide">
-          <div class="slide-content">
-            <h3 class="slide-title title">Сливочное мороженое со вкусом банана</h3>
-            <p class="slide-text">
-              Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.
-            </p>
-            <a class="button" href="#">Заказать</a>
-          </div>
-          <div class="slide-image-wrapper">
-            <img class="slide-image" src="images/index/promo-product-3.png" width="306" height="507" alt="Рожок мороженого с присыпкой.">
-          </div>
-        </div>
-        <div class="controls">
-          <button class="previous-button" type="button">
-            <span class="visually-hidden">Предыдущий промо-товар.</span>
-            <svg class="slider-button-arrow" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Выбор предыдущего промо товара.">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8033 1.80515C6.063 1.54545 6.063 1.12439 5.8033 0.864696C5.54361 0.604997 5.12255 0.604997 4.86285 0.864696L0.194774 5.53277C-0.0640686 5.79162 -0.0649218 6.21075 0.192214 6.47065C0.193377 6.47183 0.194544 6.47301 0.195717 6.47418L4.8638 11.1423C5.12349 11.402 5.54455 11.402 5.80425 11.1423C6.06395 10.8826 6.06395 10.4615 5.80425 10.2018L1.60545 6.00301L5.8033 1.80515Z" fill="#fcfcfc"/>
-              </svg>
+        <div class="slider__toggles">
+          <button class="slider__toggle prev__slide__button" type="button">
+            <span class="visually-hidden">Предыдущий слайд.</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.803 3.805a.665.665 0 1 0-.94-.94L4.195 7.533a.665.665 0 0 0-.003.938l.004.003 4.668 4.668a.665.665 0 1 0 .94-.94L5.605 8.003l4.198-4.198Z"
+                fill="currentColor" /></svg>
           </button>
-          <button class="next-button" type="button">
-            <span class="visually-hidden">Следующий промо-товар.</span>
-            <svg class="slider-button-arrow" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Выбор предыдущего промо товара.">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8033 1.80515C6.063 1.54545 6.063 1.12439 5.8033 0.864696C5.54361 0.604997 5.12255 0.604997 4.86285 0.864696L0.194774 5.53277C-0.0640686 5.79162 -0.0649218 6.21075 0.192214 6.47065C0.193377 6.47183 0.194544 6.47301 0.195717 6.47418L4.8638 11.1423C5.12349 11.402 5.54455 11.402 5.80425 11.1423C6.06395 10.8826 6.06395 10.4615 5.80425 10.2018L1.60545 6.00301L5.8033 1.80515Z" fill="#fcfcfc"/>
-              </svg>
+          <button class="slider__toggle next__slide__button" type="button">
+            <span class="visually-hidden">Следующий слайд.</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002c.26-.26.26-.681 0-.94L7.135 2.864Z"
+                fill="currentColor" /></svg>
           </button>
         </div>
-        <!-- Отсутствует JavaScript. При нажатии на одну из кнопок меняется класс .active-slide,
-           а также удаляется у кнопки класс .dot-button-active и переносится на кнопку на которую был произведен клик -->
-        <div class="slider-pagination">
-          <button class="dot-button dot-button-is-active" type="button">
-            <span class="visually-hidden">Первый промо-товар.</span>
-          </button>
-          <button class="dot-button" type="button">
-            <span class="visually-hidden">Второй промо-товар.</span>
-          </button>
-          <button class="dot-button" type="button">
-            <span class="visually-hidden">Третий промо-товар.</span>
-          </button>
+        <div class="slider__footer">
+          <div class="slider__pagination">
+            <button class="slider__pagination__button is__active" type="button">
+              <span class="visually-hidden">Первый товар.</span>
+            </button>
+            <button class="slider__pagination__button" type="button">
+              <span class="visually-hidden">Второй товар.</span>
+            </button>
+            <button class="slider__pagination__button" type="button">
+              <span class="visually-hidden">Третий товар.</span>
+            </button>
+          </div>
+          <ul class="slider-social-list">
+            <li class="slide-social-item">
+              <a class="slide-social-link slide-social-link-tg" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграмм.</span>
+              </a>
+            </li>
+            <li class="slide-social-item">
+              <a class="slide-social-link slide-social-link-vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте.</span>
+              </a>
+            </li>
+            <li class="slide-social-item">
+              <a class="slide-social-link slide-social-link-yt" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб.</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="slide-social-list">
-          <li class="slide-social-item">
-            <a class="slide-social-link slide-social-link-tg" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграмм.</span>
-            </a>
-          </li>
-          <li class="slide-social-item">
-            <a class="slide-social-link slide-social-link-vk" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Вконтакте.</span>
-            </a>
-          </li>
-          <li class="slide-social-item">
-            <a class="slide-social-link slide-social-link-yt" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб.</span>
-            </a>
-          </li>
-        </ul>
       </section>
 
       <section class="gifts">
@@ -505,5 +510,6 @@
          </section>
         </div>
       </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
