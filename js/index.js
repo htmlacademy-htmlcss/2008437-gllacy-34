@@ -1,20 +1,20 @@
-const slides = document.querySelectorAll(".slider__slide");
-const buttonPrev = document.querySelector(".prev__slide__button");
-const buttonNext = document.querySelector(".next__slide__button");
-const bullets = document.querySelectorAll(".slider__pagination__button");
+const slides = document.querySelectorAll(".slider-slide");
+const buttonPrev = document.querySelector(".prev-slide-button");
+const buttonNext = document.querySelector(".next-slide-button");
+const bullets = document.querySelectorAll(".slider-pagination-button");
 const slidesAmount = slides.length;
 let currentIndex = 0;
 
 const onSlideChange = (index) => {
-  const activeSlide = document.querySelector(".slider__slide.is__active");
-  const activeBullet = document.querySelector(".slider__pagination__button.is__active");
+  const activeSlide = document.querySelector(".slider-slide.is-active");
+  const activeBullet = document.querySelector(".slider-pagination-button.is-active");
   document.body.style.backgroundColor = slides[index].dataset.color;
   slides.forEach((element) => (element.style.order = ""));
-  activeSlide.classList.remove("is__active");
-  slides[index].classList.add("is__active");
+  activeSlide.classList.remove("is-active");
+  slides[index].classList.add("is-active");
   slides[index].style.order = "-1";
-  activeBullet.classList.remove("is__active");
-  bullets[index].classList.add("is__active");
+  activeBullet.classList.remove("is-active");
+  bullets[index].classList.add("is-active");
 };
 
 const onPrevButtonClick = (evt) => {

@@ -1074,45 +1074,45 @@ margin: 0;
   flex-direction: column;
 }
 
-.slider__slides {
+.slider-slides {
   display: flex;
   padding-left: 70px;
   max-width: 1170px;
   overflow: hidden;
 }
 
-.slider__slide.is__active {
+.slider-slide.is-active {
   width: 800px;
   display: grid;
   grid-template-columns: 470px 630px;
 }
 
-.slider__slide.is__active .slider__content {
+.slider-slide.is-active .slider-content {
   display: flex;
 }
 
-.slider__slide.is__active .slider__image__wrapper {
+.slider-slide.is-active .slider-image-wrapper {
   transform: scale(1);
   padding: 23px 21px 13px;
   opacity: 1;
 }
 
-.slider__slide.is__active .slider__image {
+.slider-slide.is-active .slider-image {
   transform: scale(1);
 }
 
-.slider__slide.is__active .slider__image {
+.slider-slide.is-active .slider-image {
   width: 306px;
   height: 507px;
 }
 
-.slider__slide {
+.slider-slide {
   width: 140px;
 }
 
 /* Slider – Content */
 
-.slider__content {
+.slider-content {
   display: none;
   flex-direction: column;
   align-items: flex-start;
@@ -1120,39 +1120,32 @@ margin: 0;
   padding: 40px 0 30px;
 }
 
-.slider__title {
+.slider-title {
   margin: 0 0 24px;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 46px;
-  color: #2d3440;
 }
 
-.slider__description {
+.slider-description {
   margin: 0 0 48px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #2d3440;
 }
 
-.order__button {
+.order-button {
   min-width: 139px;
   max-width: 163px;
 }
 
 /* Slider – Images */
 
-.slider__image__wrapper {
+.slider-image-wrapper {
   transform: scale(0.315) translate(34px, 58px);
   position: relative;
   opacity: 0.4;
 }
 
-.slider__image {
+.slider-image {
   transform: scale(0.91) translate(10px, 20px);
 }
 
-.slider__image__wrapper::before {
+.slider-image-wrapper::before {
   position: absolute;
   content: "";
   width: 312px;
@@ -1165,7 +1158,7 @@ margin: 0;
 
 /* Slider – Toggle */
 
-.slider__toggles {
+.slider-toggles {
   position: absolute;
   top: 260px;
   left: 542px;
@@ -1174,7 +1167,7 @@ margin: 0;
   width: 350px;
 }
 
-.slider__toggle {
+.slider-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1187,48 +1180,48 @@ margin: 0;
   cursor: pointer;
 }
 
-.slider__toggle:hover {
-  border: 2px solid #fcfcfc;
+.slider-toggle:hover {
+  border: 2px solid var(--basic-white);
   color: #2d3440;
-  background-color: #fcfcfc;
+  background-color: var(--basic-white);
 }
 
-.slider__toggle:focus {
-  border: 2px solid #2d3440;
-  color: #2d3440;
+.slider-toggle:focus {
+  border: 2px solid var(--basic-extra-dark);
+  color: var(--basic-extra-dark);
   background-color: rgba(252, 252, 252, 0.3);
   outline: none;
 }
 
-.slider__toggle:active {
+.slider-toggle:active {
   border: none;
   box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.5);
-  color: #2d3440;
+  color: var(--basic-extra-dark);
   background-color: rgba(252, 252, 252, 0.5);
 }
 
-.slider__toggle:disabled {
-  border: 2px solid #fcfcfc;
-  color: #fcfcfc;
+.slider-toggle:disabled {
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
   background-color: rgba(252, 252, 252, 0.3);
   opacity: 0.4;
   pointer-events: none;
 }
 
-.slider__footer {
+.slider-footer {
   display: flex;
   justify-content: space-between;
 }
 
 /* Slider – Pagination */
 
-.slider__pagination {
+.slider-pagination {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
 
-.slider__pagination__button {
+.slider-pagination-button {
   display: flex;
   width: 11px;
   height: 11px;
@@ -1240,25 +1233,25 @@ margin: 0;
   border: none;
 }
 
-.slider__pagination__button:hover {
-  box-shadow: 0 0 0 1px #fcfcfc;
+.slider-pagination-button:hover {
+  box-shadow: 0 0 0 1px var(--basic-white);
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-.slider__pagination__button:focus {
+.slider-pagination-button:focus {
   box-shadow: 0 0 0 1px #2d3440;
   background-color: rgba(252, 252, 252, 0.3);
   outline: none;
 }
 
-.slider__pagination__button:active {
+.slider-pagination-button:active {
   box-shadow: 0 0 0 1px rgba(252, 252, 252, 0.5);
   background-color: rgba(252, 252, 252, 0.5);
 }
 
-.slider__pagination__button.is__active {
-  box-shadow: 0 0 0 1px #fcfcfc;
-  background-color: #fcfcfc;
+.slider-pagination-button.is-active {
+  box-shadow: 0 0 0 1px var(--basic-white);
+  background-color: var(--basic-white);
   pointer-events: none;
 }
 
