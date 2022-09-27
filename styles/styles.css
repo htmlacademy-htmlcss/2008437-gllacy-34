@@ -1919,6 +1919,7 @@ margin: 0;
   padding-right: 63px;
   padding-left: 16px;
   appearance: none;
+  font-family: inherit;
   color: var(--basic-extra-dark);
   background-image: url("../images/catalog/icons/icon-select.svg");
   background-repeat: no-repeat;
