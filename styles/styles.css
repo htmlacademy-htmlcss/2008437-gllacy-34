@@ -1287,7 +1287,7 @@ margin: 0;
   background-color: var(--special-neutral);
   border-radius: 16px;
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: bottom right;
 }
 
 .gifts-item-raspberry {
