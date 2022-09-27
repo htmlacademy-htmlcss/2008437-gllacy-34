@@ -921,8 +921,9 @@ padding: 8px 0 8px 16px;
 .slider-social-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   min-width: 104px;
+  max-width: 250px;
   margin: 0;
   margin-bottom: -16px;
   margin-right: auto;
@@ -1561,9 +1562,10 @@ margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 64px 64px 64px 100px;
   background-image: url("../images/index/backgrounds/background-icecreams.jpg");
+  background-color: var(--basic-white);
   background-repeat: no-repeat;
   background-size: 105%;
   background-position: top -141px right -58px;
@@ -1571,6 +1573,7 @@ margin: 0;
 }
 
 .delivery-description {
+  margin-top: 101px;
   width: 371px;
 }
 
