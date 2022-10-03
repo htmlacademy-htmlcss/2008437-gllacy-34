@@ -51,6 +51,78 @@
   --shadow-large: 0 15px 40px rgba(45, 52, 64, 0.12);
 }
 
+/* BASIC STYLES */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  min-width: 1366px;
+  height: 100%;
+  /* Basic font - paragraph-1 */
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-extra-dark);
+  background-color: var(--special-light);
+}
+
+.body-blue {
+  background-color: var(--special-blue);
+}
+
+.body-yellow {
+  background-color: var(--special-yellow);
+}
+
+img {
+  display: block;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Containers */
+
+.container {
+  width: 1250px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+/* Page Layouts */
+
+.main-index,
+.main-catalog {
+  flex-grow: 1;
+}
+
+.main-catalog {
+  padding-top: 29px;
+}
+
 /* ELEMENTS */
 
 /* Buttons – Common Styles */
@@ -483,76 +555,6 @@ line-height: 20px;
 
 .shadow-large {
   box-shadow: var(--shadow-large);
-}
-
-/* Containers */
-
-.container {
-  width: 1250px;
-  padding: 0 40px;
-  margin: 0 auto;
-}
-
-/* BASIC STYLES */
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  width: 100%;
-  min-width: 1366px;
-  height: 100%;
-  /* Basic font - paragraph-1 */
-  font-family: "Inter", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--basic-extra-dark);
-  background-color: var(--special-light);
-}
-
-.body-blue {
-  background-color: var(--special-blue);
-}
-
-.body-yellow {
-  background-color: var(--special-yellow);
-}
-
-.main-index,
-.main-catalog {
-  flex-grow: 1;
-}
-
-.main-catalog {
-  padding-top: 29px;
-}
-
-img {
-  display: block;
-  object-fit: contain;
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
 
 /* ANCHOR HEADER*/
@@ -1864,7 +1866,7 @@ margin: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  left: 2px;
   display: inline-block;
   width: 12px;
   height: 12px;
