@@ -611,19 +611,19 @@ line-height: 20px;
 
 .cart-button-wrapper:focus-within .cart-popup {
   display: block;
- }
+}
 
  .cart-button-wrapper:focus-within .cart-popup-empty{
   display: none;
- }
+}
 
  .cart-button-wrapper-is-empty:focus-within .cart-popup {
   display: none;
- }
+}
 
  .cart-button-wrapper-is-empty:focus-within .cart-popup-empty{
   display: block;
- }
+}
 
 .header-popup,
 .cart-popup {
@@ -1002,7 +1002,6 @@ background-color: var(--basic-extra-dark);
   grid-template-columns: auto auto;
   grid-template-rows: 20px 20px;
   align-items: center;
-
   row-gap: 8px;
   column-gap: 24px;
   margin: 0;
