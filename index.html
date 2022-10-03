@@ -7,7 +7,8 @@
     <link rel="ico" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
-
+  <!-- Чтобы увидеть на кнопке анимацию загрузки добавьте к основной или дополнительной
+  кнопке класс button-loading (основная кнопка) или button-secondary-laoding (доп. кнопки)-->
   <body>
     <header class="page-header container">
       <a class="header-logo" href="#" aria-label="Ссылка на текущую страницу.">
@@ -72,10 +73,11 @@
             </form>
           </div>
         </div>
-        <!--  -->
-        <div class="header-button-wrapper">
+        <!--  Чтобы увидеть пустое окошко («Корзина пока пуста«)
+          добавьте к тэгу ниже класс cart-button-wrapper-is-empty-->
+        <div class="cart-button-wrapper ">
           <button class="header-button button-menu button-cart label-1" type="button">2 товара</button>
-          <div class="header-popup cart-popup">
+          <div class="cart-popup">
             <div class="cart-popup-wrapper">
               <h3 class="cart-popup-title title-3">Корзина</h3>
               <ul class="cart-popup-list">
@@ -108,7 +110,7 @@
               </div>
             </div>
           </div>
-          <div class="header-popup cart-popup cart-popup-empty">
+          <div class="cart-popup cart-popup-empty">
             <h3 class="cart-popup-title-empty title-3">
               Ваша корзина пока пуста
             </h3>
@@ -127,8 +129,7 @@
               <h3 class="slider-title title">Нежный пломбир с&nbsp;клубничным джемом</h3>
               <p class="slider-description">Натуральное мороженое из свежих сливок
                 и&nbsp;молока с вкуснейшим клубничным джемом <br> – это&nbsp;идеальный десерт для всей семьи. </p>
-              <!-- Чтобы убрать/добавить анимцию загрузки у кнопки нужно убрать/добавить класс button-loading или для доп. кнопок button-secondary-loading -->
-              <a class="button button-loading" href="#">Заказать</a>
+              <a class="button" href="#">Заказать</a>
             </div>
             <div class="slider-image-wrapper">
               <img class="slider-image" src="images/index/promo-product-1.png"

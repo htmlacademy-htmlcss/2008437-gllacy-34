@@ -125,7 +125,7 @@
           <a class="breadcrumbs-link label-bold" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link breadcrumbs-link-current label-bold">Каталог</a>
+          <a class="breadcrumbs-link label-bold">Каталог</a>
         </li>
       </ul>
       <section class="catalog">
@@ -159,28 +159,28 @@
               <ul class="catalog-filter-form-list catalog-filter-form-list-radio label-1">
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="fat" value="0%" aria-label="Выбрать товары с нулевой жирностью.">
+                    <input class="control-input visually-hidden" type="radio" name="fat" value="0%">
                     <span class="control-mark-radio"></span>
                     <span class="control-label">0%</span>
                   </label>
                 </li>
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="fat" value="<10%" aria-label="Выбрать товары с жирностью менее 10%.">
+                    <input class="control-input visually-hidden" type="radio" name="fat" value="less_10%">
                     <span class="control-mark-radio"></span>
                     <span class="control-label">до 10%</span>
                   </label>
                 </li>
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="fat" value="<30%" aria-label="Выбрать товары с жирностью до 30%.">
+                    <input class="control-input visually-hidden" type="radio" name="fat" value="less_30%">
                     <span class="control-mark-radio"></span>
                     <span class="control-label">до 30%</span>
                   </label>
                 </li>
                 <li class="catalog-list-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="fat" value=">30%" aria-label="Выбрать товары с жирностью выше 30%.">
+                    <input class="control-input visually-hidden" type="radio" name="fat" value="more_30%">
                     <span class="control-mark-radio"></span>
                     <span class="control-label">выше 30%</span>
                   </label>
@@ -482,9 +482,11 @@
           </li>
         </ul>
         <div class="pagination-wrapper">
-          <button class="pagination-button-more button" type="button">Показать еще</button>
+          <a class="pagination-button-more button" href="#">Показать еще</a>
           <div class="pagination-container">
-            <a class="pagination-button pagination-button-back" href="#"><span class="visually-hidden">Назад</span></a>
+            <a class="pagination-button pagination-button-back" href="#">
+              <span class="visually-hidden">Назад</span>
+            </a>
             <ul class="pagination">
               <li class="pagination-item">
                 <a class="pagination-link paragraph-3" href="#">1</a>
@@ -502,7 +504,9 @@
                 <a class="pagination-link paragraph-3" href="#">5</a>
               </li>
             </ul>
-            <a class="pagination-button pagination-button-forward" href="#"><span class="visually-hidden">Вперед</span></a>
+            <a class="pagination-button pagination-button-forward" href="#">
+              <span class="visually-hidden">Вперед</span>
+            </a>
           </div>
         </div>
       </section>
