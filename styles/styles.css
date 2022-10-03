@@ -321,7 +321,7 @@
 /* Form Fields */
 
 .form-field {
-  padding: 14px 0 14px 16px;
+  padding: 14px 16px;
   border: none;
   border-radius: 4px;
   font-family: inherit;
@@ -345,12 +345,12 @@
   border-color: transparent;
 }
 
-.form-field:invalid {
+.form-field-is-invalid{
   outline-width: 1px;
   outline-color: var(--status-error);
 }
 
-.form-field:invalid:hover {
+.form-field-is-invalid:hover {
   outline-width: 2px;
   outline-color: var(--status-error);
 }
@@ -728,10 +728,8 @@ padding: 8px 0 8px 16px;
   width: 324px;
   min-height: 48px;
   padding: 14px 0 14px 16px;
-  border: 1px solid var(--basic-neutral);
   border-radius: 4px;
   color: inherit;
-  outline: none;
 }
 
 .site-search-field::placeholder {
@@ -758,10 +756,8 @@ padding: 8px 0 8px 16px;
   width: 324px;
   min-height: 48px;
   padding: 14px 0 14px 16px;
-  border: 1px solid var(--basic-neutral);
   border-radius: 4px;
   color: inherit;
-  outline: none;
 }
 
 .login-form-field::placeholder {
@@ -909,6 +905,10 @@ padding: 8px 0 8px 16px;
 
 /* Layout */
 
+.page-footer {
+  margin-top: auto;
+}
+
 .page-footer-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -1027,8 +1027,7 @@ background-color: var(--basic-extra-dark);
   text-decoration: none;
 }
 
-/* Styles added NOT from a figma design layout,
-just to improve a visual style (ANCHOR – Non-essential styles) */
+/* (ANCHOR – Non-essential styles) */
 
 .footer-menu-link:hover {
   opacity: 0.5;
@@ -1576,12 +1575,11 @@ margin: 0;
 }
 
 .delivery-description {
-  margin-top: 101px;
+  margin-top: 104px;
   width: 371px;
 }
 
 .delivery-description-title {
-  margin-top: 3px;
   margin-bottom: 24px;
 }
 
@@ -1800,6 +1798,7 @@ margin: 0;
   min-height: 149px;
   padding: 14px 16px;
   margin-bottom: 32px;
+  resize: none;
 }
 
 .modal-textarea::placeholder {
