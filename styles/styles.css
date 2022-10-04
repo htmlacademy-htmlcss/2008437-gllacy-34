@@ -2097,6 +2097,17 @@ margin: 0;
   background-color: var(--basic-extra-light);
 }
 
+.control-input:focus:enabled ~ .control-mark-radio,
+.control-input:focus:enabled ~ .control-mark-icon,
+.control-input:focus:enabled ~ .control-mark-icon-empty {
+  border-color: var(--basic-extra-light);
+  color: var(--basic-extra-light);
+}
+
+.control-input:focus:enabled ~ .control-mark-radio:after {
+  background-color: var(--basic-extra-light);
+}
+
 .control-input:disabled ~ .control-mark-radio,
 .control-input:disabled ~ .control-mark-icon,
 .control-input:disabled ~ .control-mark-icon-empty {
